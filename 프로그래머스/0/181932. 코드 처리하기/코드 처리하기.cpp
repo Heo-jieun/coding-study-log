@@ -11,5 +11,5 @@ string solution(string code) {
         else if(code[i] != '1' && !mode && i%2==0) ret += code[i] ;
         mode = (code[i] == '1') ? !mode : mode;
     }
-    return ret.size() == 0 ? "EMPTY" : ret;
+    return ret.empty() ? "EMPTY" : ret;
 }

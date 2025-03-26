@@ -1,10 +1,10 @@
 # [level 0] 코드 처리하기 - 181932 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181932?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181932) 
 
 ### 성능 요약
 
-메모리: 4.15 MB, 시간: 0.49 ms
+메모리: 3.84 MB, 시간: 0.51 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 03월 26일 16:16:20
+2025년 03월 26일 16:18:07
 
 ### 문제 설명
 
