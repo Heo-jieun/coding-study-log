@@ -1,6 +1,21 @@
+# 필요없는 파일/폴더 제외
 /.vscode
 /HelloCPPWorld
 /HelloCPPWorld.cpp
 /HelloCPPWorld.exe
 /HelloWorld.c
 /HelloWorld.exe
+BackJoonPR/
+
+# 실행파일 제외
+*.exe
+
+# 빌드 디렉토리 무시 (예: Visual Studio 등)
+build/
+Debug/
+Release/
+
+# 임시 파일들 무시
+*.obj
+*.log
+*.out
