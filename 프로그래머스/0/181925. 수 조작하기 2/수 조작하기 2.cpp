@@ -1,17 +1,13 @@
 #include <string>
 #include <vector>
-
+#include <map>
 using namespace std;
 
+map <int, string> m = {{1, "w"}, {-1, "s"}, {10, "d"}, {-10, "a"}};
 string solution(vector<int> numLog) {
     string answer = "";
-    int pre = numLog[0];
-    for(int num : numLog){
-        if(num == pre+1) answer+='w';
-        else if(num == pre-1) answer+='s';
-        else if(num == pre+10) answer+='d';
-        else if(num == pre-10) answer+='a';
-        pre = num ; 
+    for(int i = 0; i<numLog.size() ; i++ ){
+        answer += m[numLog[i] - numLog[i-1] ];
     }
     return answer;
 }
