@@ -22,8 +22,7 @@ int main(){
     // 티셔츠 주문 구하기
     int t_order = 0 ;
     for(int size : size_arr){
-        t_order +=size / T;
-        if(size%T !=0) t_order++;
+        t_order += (size+T-1)/T ; //올림 나눗셈 공식
     }
     printf("%d\n%d %d\n", t_order, pen_order, pen_one_order);
 }
