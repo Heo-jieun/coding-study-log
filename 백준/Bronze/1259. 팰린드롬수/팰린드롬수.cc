@@ -1,21 +1,17 @@
 #include <stdio.h>
-#include <string>
 using namespace std;
 
 int main(){
-    int a = -1, i; 
-    while(a!=0){
-        scanf("%d", &a);
-        if(a==0){
-            return 0; 
-        }
-        string str = to_string(a);
-        for(i = 0; i<str.size()/2; i++){
-            if(str[i]!=str[str.size()-1-i]){
-                printf("no\n");
-                break;
-            }
-        }
-        if(i == (str.size()/2)) printf("yes\n");
+   int num; 
+   while(1){
+    scanf("%d", &num); // a입력받기 
+    if(!num) break; // a==0이면 종료
+    int n=num, p=0; 
+    while(n){
+        p = 10*p + n%10;
+        n /= 10;
     }
+    puts(num==p ? "yes":"no");
+   }
+   return 0;
 }
