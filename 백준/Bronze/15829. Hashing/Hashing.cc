@@ -1,15 +1,19 @@
 #include <stdio.h>
 using namespace std;
 
+const int r = 31;
+const int mod = 1234567891;
+
 int main(){
-    int L, answer=0, i, r=1;
+    int L; 
+    long long hash=0, power=1;
     char str;
     scanf("%d", &L);
     
-    for(i = 0; i<L; i++){
+    for(int i = 0; i<L; i++){
         scanf(" %c",&str);
-        answer += (str - 96)*r;
-        r*=31;
+        hash = (hash+(str - 96)*power) % mod ;
+        power = (power*r)%mod;
     }
-    printf("%d\n", answer);
+    printf("%lld\n", hash%mod);
 }
