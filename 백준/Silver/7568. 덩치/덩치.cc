@@ -26,10 +26,7 @@ int main(){
                 grade++;
             }
         }
-        big[i].push_back(grade); 
-    }
-    for(i = 0; i<n; i++){
-        cout << big[i][2] << " " ;
+        cout << grade << " " ; 
     }
     cout << "\n";
 }
