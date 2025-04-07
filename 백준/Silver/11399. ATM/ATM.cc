@@ -4,7 +4,7 @@
 using namespace std; 
 
 int main(){
-    int n, i, time=0,sum=0, tmp ;
+    int n, i, time=0, tmp ;
     vector<int> arr ; 
     cin >> n;
     for(i = 0; i<n ; i++){
@@ -13,8 +13,7 @@ int main(){
     }
     sort(arr.begin(), arr.end());
     for(i=0;i<n;i++){
-        sum += arr[i];
-        time += sum; 
+        time += arr[i]*(n-i);
     }
     cout << time << "\n";
 }
